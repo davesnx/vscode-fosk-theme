@@ -1,0 +1,50 @@
+{
+  "name": "vscode-fosk-theme",
+  "displayName": "Fosk",
+  "description": "A simple theme with bright colors",
+  "version": "0.1.0",
+  "publisher": "davesnx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davesnx/vscode-fosk-theme"
+  },
+  "bugs": {
+    "url": "https://github.com/davesnx/vscode-fosk-theme/issues",
+    "email": "dsnxmoreno@gmail.com"
+  },
+  "engines": {
+    "vscode": "^1.13.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "icon-theme",
+    "theme"
+  ],
+  "homepage": "https://github.com/davesnx/vscode-fosk-theme",
+  "icon": "assets/logo.png",
+  "contributes": {
+    "themes": [
+      {
+        "label": "Fosk",
+        "uiTheme": "vs",
+        "path": "./fosk.json"
+      }
+    ]
+  },
+  "scripts": {
+    "build": "ts-node ./src/build.ts",
+    "package": "vsce package",
+    "start": "npm run build; npm run package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/node": "^16.6.0",
+    "ayu": "^7.0.2",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.3",
+    "vsce": "^1.96.1"
+  }
+}
