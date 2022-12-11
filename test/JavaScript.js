@@ -1,9 +1,8 @@
-import { Binder } from './binder';
-import { Dialog } from './dialog';
-import { Channel } from './channel';
+import { Binder } from "./binder";
+import { Dialog } from "./dialog";
+import { Channel } from "./channel";
 
 export class Bot {
-
   constructor() {
     /** @internal */
     this._dialogHandlers = [];
@@ -30,12 +29,12 @@ export class Bot {
   }
 
   onMessage(message) {
-    const performer = this._performerHandlers.find(c => c.match(message));
+    const performer = this._performerHandlers.find((c) => c.match(message));
     if (performer) return performer.handler(message, this);
     const channel = this._channelFor(message.channel);
     const hasActions = channel.hasFor(message.user);
     if (hasActions) return channel.processMessage(message);
-    const dialog = this._dialogHandlers.find(c => c.match(message));
+    const dialog = this._dialogHandlers.find((c) => c.match(message));
 
     if (dialog) {
       const obj = this.dialog(message.channel, [message.user]);
