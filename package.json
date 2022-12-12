@@ -2,7 +2,7 @@
   "name": "vscode-fosk-theme",
   "displayName": "Fosk",
   "description": "A simple theme with bright colors",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "davesnx",
   "license": "MIT",
   "repository": {
@@ -29,7 +29,7 @@
     "themes": [
       {
         "label": "Fosk",
-        "uiTheme": "vs",
+        "uiTheme": "vs-dark",
         "path": "./fosk.json"
       }
     ]
