@@ -1,8 +1,8 @@
 {
-  "name": "vscode-fosk-theme",
-  "displayName": "Fosk",
+  "name": "vscode-fosklar-theme",
+  "displayName": "Fosklar",
   "description": "A simple theme with bright colors",
-  "version": "0.1.1",
+  "version": "0.2.2",
   "publisher": "davesnx",
   "license": "MIT",
   "repository": {
@@ -28,9 +28,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Fosk",
+        "label": "Fosk (development)",
         "uiTheme": "vs-dark",
         "path": "./fosk.json"
+      },
+      {
+        "label": "Klar (development)",
+        "uiTheme": "vs",
+        "path": "./klar.json"
       }
     ]
   },

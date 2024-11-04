@@ -1,4 +1,5 @@
 {
+	"$schema": "vscode://schemas/color-theme",
 	"type": "dark",
 	"colors": {
 		"focusBorder": "#596171",
@@ -54,7 +55,6 @@
 		"sideBarSectionHeader.background": "#1f2430",
 		"sideBarSectionHeader.foreground": "#707a8c",
 		"editorGroup.border": "#191e2a",
-		"editorGroup.background": "#232834",
 		"editorGroupHeader.noTabsBackground": "#1f2430",
 		"editorGroupHeader.tabsBackground": "#1f2430",
 		"editorGroupHeader.tabsBorder": "#1f2430",
@@ -88,8 +88,8 @@
 		"editorLink.activeForeground": "#ffcc66",
 		"editor.rangeHighlightBackground": "#191e2a",
 		"editorWhitespace.foreground": "#707a8c66",
-		"editorIndentGuide.background": "#707a8c4d",
-		"editorIndentGuide.activeBackground": "#707a8cb3",
+		"editorIndentGuide.background1": "#707a8c4d",
+		"editorIndentGuide.activeBackground1": "#707a8cb3",
 		"editorRuler.foreground": "#707a8c4d",
 		"editorCodeLens.foreground": "#5c6773",
 		"editorBracketMatch.background": "#707a8c4d",
@@ -157,7 +157,7 @@
 		"gitDecoration.deletedResourceForeground": "#f27983b3",
 		"gitDecoration.untrackedResourceForeground": "#a6cc70b3",
 		"gitDecoration.ignoredResourceForeground": "#525a69",
-		"gitDecoration.conflictingResourceForeground": "",
+		"gitDecoration.conflictingResourceForeground": "#d4bfffb3",
 		"gitDecoration.submoduleResourceForeground": "#d4bfffb3",
 		"settings.headerForeground": "#cbccc6",
 		"settings.modifiedItemIndicator": "#77a8d9",
@@ -178,12 +178,25 @@
 		"terminal.ansiBrightBlue": "#73d0ff",
 		"terminal.ansiBrightMagenta": "#d4bfff",
 		"terminal.ansiBrightCyan": "#95e6cb",
-		"terminal.ansiBrightWhite": "#ffffff"
+		"terminal.ansiBrightWhite": "#ffffff",
+		"tree.indentGuidesStroke": "#707a8c",
+		"editorBracketHighlight.foreground1": "#cbccc6",
+		"editorBracketHighlight.foreground2": "#ffcc66",
+		"editorBracketHighlight.foreground3": "#73d0ff",
+		"editorBracketHighlight.foreground4": "#c172d9",
+		"editorBracketHighlight.foreground5": "#bae67e",
+		"editorBracketHighlight.foreground6": "#4fb1bc",
+		"editorBracketHighlight.unexpectedBracket.foreground": "#db4d3f",
+		/* "editorInlayHint.background": "",
+		"editorInlayHint.foreground": "",
+		"editorInlayHint.parameterBackground": "",
+		"editorInlayHint.parameterForeground": "", */
+		"editorInlayHint.typeBackground": "#ffcc661a",
+		"editorInlayHint.typeForeground": "#969696"
 	},
 	"tokenColors": [
 		{
 			"settings": {
-				"background": "#1f2430",
 				"foreground": "#cbccc6"
 			}
 		},
@@ -539,7 +552,7 @@
 				"support.type.property-name"
 			],
 			"settings": {
-				"fontStyle": "normal",
+				"fontStyle": "",
 				"foreground": "#5ccfe6"
 			}
 		},
@@ -635,7 +648,7 @@
 				"markup.raw"
 			],
 			"settings": {
-				"background": "#cbccc605"
+				"foreground": "#cbccc605"
 			}
 		},
 		{
@@ -644,7 +657,6 @@
 				"markup.raw.inline"
 			],
 			"settings": {
-				"background": "#cbccc60f"
 			}
 		},
 		{
@@ -654,7 +666,6 @@
 			],
 			"settings": {
 				"fontStyle": "bold",
-				"background": "#cbccc60f",
 				"foreground": "#5c6773"
 			}
 		},
@@ -719,7 +730,6 @@
 				"markup.table"
 			],
 			"settings": {
-				"background": "#cbccc60f",
 				"foreground": "#5ccfe6"
 			}
 		},
@@ -738,7 +748,6 @@
 				"text.html.markdown meta.dummy.line-break"
 			],
 			"settings": {
-				"background": "#5c6773",
 				"foreground": "#5c6773"
 			}
 		},
@@ -748,7 +757,6 @@
 				"punctuation.definition.markdown"
 			],
 			"settings": {
-				"background": "#cbccc6",
 				"foreground": "#5c6773"
 			}
 		}
