@@ -41,13 +41,13 @@
     "editor.lineHighlightBackground": "#8a91991a",
     "editor.rangeHighlightBackground": "#ecd9ff33",
     "editor.selectionBackground": "#035bd626",
-    "editor.selectionHighlightBackground": "#6cbf4326",
+    "editor.selectionHighlightBackground": "#6cbf4300",
     "editor.selectionHighlightBorder": "#6cbf4300",
-    "editor.snippetTabstopHighlightBackground": "#6cbf4333",
+    "editor.snippetTabstopHighlightBackground": "#6cbf4300",
     "editor.wordHighlightBackground": "#478acc14",
-    "editor.wordHighlightBorder": "#478acc80",
-    "editor.wordHighlightStrongBackground": "#6cbf4314",
-    "editor.wordHighlightStrongBorder": "#6cbf4380",
+    "editor.wordHighlightBorder": "#478acc14",
+    "editor.wordHighlightStrongBackground": "#478acc14",
+    "editor.wordHighlightStrongBorder": "#478acc14",
     "editorBracketMatch.background": "#8a91994d",
     "editorBracketMatch.border": "#8a91994d",
     "editorCodeLens.foreground": "#819bb8",
@@ -79,7 +79,7 @@
     "editorOverviewRuler.modifiedForeground": "#478acc",
     "editorOverviewRuler.warningForeground": "#E1EBEF",
     "editorOverviewRuler.wordHighlightForeground": "#478acc66",
-    "editorOverviewRuler.wordHighlightStrongForeground": "#6cbf4366",
+    "editorOverviewRuler.wordHighlightStrongForeground": "#478acc66",
     "editorRuler.foreground": "#8a91992e",
     "editorSuggestWidget.background": "#f3f4f5",
     "editorSuggestWidget.border": "#6b7d8f1f",
@@ -95,7 +95,7 @@
     "extensionButton.prominentHoverBackground": "#f9a52e",
     "focusBorder": "#E1EBEFb3",
     "foreground": "#8a9199",
-    "gitDecoration.conflictingResourceForeground": "#ff0000",
+    "gitDecoration.conflictingResourceForeground": "#e65050",
     "gitDecoration.deletedResourceForeground": "#ff7383b3",
     "gitDecoration.ignoredResourceForeground": "#8a919980",
     "gitDecoration.modifiedResourceForeground": "#478accb3",
@@ -413,7 +413,8 @@
         "storage.type.function"
       ],
       "settings": {
-        "foreground": "#FA8E3F"
+        "foreground": "#FA8E3F",
+        "fontStyle": "bold"
       }
     },
     {
