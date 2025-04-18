@@ -1,7 +1,6 @@
 import React from 'react'
 
-
-const Component = () => 
+const Component = () =>
   <>
     <div>Something 1</div>
     <div>Something 2</div>

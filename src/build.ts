@@ -1,5 +1,4 @@
 import * as Fs from 'fs'
-/* import * as Path from 'path' */
 
 const commentColor = "#5c6773";
 const stringColor = "#bae67e";
@@ -41,7 +40,7 @@ const markdownRawBlockColor = "#5c6773";
 
 // UI colors
 const red = "#db6165";
-const cyan = "#5ccfe6";
+const cyan = "#68c1ed";
 const yellow_0 = "#fac761";
 const yellow = "#ffcc66";
 const yellow_2 = "#ffd580";

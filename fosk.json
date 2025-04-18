@@ -24,7 +24,7 @@
     "inputValidation.errorBackground": "#1f2430",
     "inputValidation.errorBorder": "#db6165",
     "inputValidation.infoBackground": "#1f2430",
-    "inputValidation.infoBorder": "#5ccfe6",
+    "inputValidation.infoBorder": "#73d0ff",
     "inputValidation.warningBackground": "#1f2430",
     "inputValidation.warningBorder": "#ffd580",
     "scrollbar.shadow": "#1f2430",
@@ -347,7 +347,7 @@
         "entity.other.inherited-class"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -365,7 +365,7 @@
         "source.java storage.type.primitive"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -435,7 +435,7 @@
         "meta.tag.sgml"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -476,7 +476,7 @@
         "source.go storage.type"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -551,7 +551,7 @@
       ],
       "settings": {
         "fontStyle": "",
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -607,7 +607,7 @@
         "string.other.link"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
@@ -727,7 +727,7 @@
         "markup.table"
       ],
       "settings": {
-        "foreground": "#5ccfe6"
+        "foreground": "#73d0ff"
       }
     },
     {
