@@ -8,7 +8,6 @@ const terminalColors = {
 }
 
 export default () => {
-  const bordered = false
   const scheme = ayu["mirage"]
   return {
     'type': 'dark',
@@ -81,13 +80,13 @@ export default () => {
       // ACTIVITY BAR
       'activityBar.background': scheme.common.bg.hex(),
       'activityBar.foreground': scheme.common.ui.alpha(.8).hex(),
-      'activityBar.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
+      'activityBar.border': scheme.common.bg.hex(),
       'activityBarBadge.background': scheme.common.accent.hex(),
       'activityBarBadge.foreground': scheme.common.bg.hex(),
 
       // SIDE BAR
       'sideBar.background': scheme.common.bg.hex(),
-      'sideBar.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
+      'sideBar.border': scheme.common.bg.hex(),
       'sideBarTitle.foreground': scheme.common.ui.hex(),
       'sideBarSectionHeader.background': scheme.common.bg.hex(),
       'sideBarSectionHeader.foreground': scheme.common.ui.hex(),
@@ -97,21 +96,21 @@ export default () => {
       'editorGroup.background': scheme.ui.panel.bg.hex(),
       'editorGroupHeader.noTabsBackground': scheme.common.bg.hex(),
       'editorGroupHeader.tabsBackground': scheme.common.bg.hex(),
-      'editorGroupHeader.tabsBorder': bordered ?  scheme.ui.line.hex() : scheme.common.bg.hex(),
-      'tab.activeBackground': bordered ? scheme.ui.panel.bg.hex() : scheme.common.bg.hex(),
+      'editorGroupHeader.tabsBorder': scheme.common.bg.hex(),
+      'tab.activeBackground': scheme.common.bg.hex(),
       'tab.activeForeground': scheme.common.fg.hex(),
-      'tab.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
-      'tab.activeBorder': bordered ? undefined : scheme.common.accent.hex(),
-      'tab.activeBorderTop': bordered ? scheme.common.accent.hex() : undefined,
-      'tab.unfocusedActiveBorder': bordered ? undefined : scheme.common.ui.hex(),
-      'tab.unfocusedActiveBorderTop': bordered ? scheme.common.ui.hex() : undefined,
+      'tab.border': scheme.common.bg.hex(),
+      'tab.activeBorder': scheme.common.accent.hex(),
+      'tab.activeBorderTop': undefined,
+      'tab.unfocusedActiveBorder': scheme.common.ui.hex(),
+      'tab.unfocusedActiveBorderTop': undefined,
       'tab.inactiveBackground': scheme.common.bg.hex(),
       'tab.inactiveForeground': scheme.common.ui.hex(),
       'tab.unfocusedActiveForeground': scheme.common.ui.hex(),
       'tab.unfocusedInactiveForeground': scheme.common.ui.hex(),
 
       // EDITOR
-      'editor.background': bordered ? scheme.ui.panel.bg.hex() : scheme.common.bg.hex(),
+      'editor.background': scheme.common.bg.hex(),
       'editor.foreground': scheme.common.fg.hex(),
       'editorLineNumber.foreground': scheme.ui.gutter.normal.hex(),
       'editorLineNumber.activeForeground': scheme.ui.gutter.active.hex(),
@@ -222,7 +221,7 @@ export default () => {
       // STATUS BAR
       'statusBar.background': scheme.common.bg.hex(),
       'statusBar.foreground': scheme.common.ui.hex(),
-      'statusBar.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
+      'statusBar.border': scheme.common.bg.hex(),
       'statusBar.debuggingBackground': scheme.syntax.operator.hex(),
       'statusBar.debuggingForeground': scheme.common.bg.fade(.5).hex(),
       'statusBar.noFolderBackground': scheme.ui.panel.bg.hex(),
@@ -236,7 +235,7 @@ export default () => {
       'titleBar.activeForeground': scheme.common.fg.hex(),
       'titleBar.inactiveBackground': scheme.common.bg.hex(),
       'titleBar.inactiveForeground': scheme.common.ui.hex(),
-      'titleBar.border': bordered ? scheme.ui.line.hex() : scheme.common.bg.hex(),
+      'titleBar.border': scheme.common.bg.hex(),
 
       // MENU BAR
       // 'menubar.selectionForeground': '?',
