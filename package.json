@@ -2,7 +2,7 @@
   "name": "vscode-fosk-theme",
   "displayName": "Fosk",
   "description": "A simple theme with bright colors",
-  "version": "0.2.6",
+  "version": "0.2.11",
   "publisher": "davesnx",
   "license": "MIT",
   "repository": {
@@ -14,7 +14,7 @@
     "email": "dsnxmoreno@gmail.com"
   },
   "engines": {
-    "vscode": "^1.13.0"
+    "vscode": "^1.75.0"
   },
   "categories": [
     "Themes"

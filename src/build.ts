@@ -1,57 +1,79 @@
 import * as Fs from 'fs'
 
-const commentColor = "#5c6773";
-const stringColor = "#bae67e";
-const regularExpressionColor = "#95e6cb";
-const numberColor = "#ffcc66";
-const constantColor = "#ffcc66";
-const variableColor = "#cbccc6";
-const memberColor = "#f28779";
-const keywordColor = "#5ccfe6";
-const lambdaArrowColor = "#ffa759";
-const errorColor = "#db6165";
-const operatorColor = "#f29e74";
-const typesColor = "#73d0ff"
-const separatorColor = "#cbccc6b3";
-const punctuationColor = "#cbccc6";
-const functionArgumentsColor = "#d4bfff";
-const functionCallColor = "#ffd580";
-const libraryFunctionColor = "#f28779";
-const importColor = "#bae67e";
-const entityNameColor = "#73d0ff";
-const tagStartEndColor = "#5ccfe680";
-const decoratorColor = "#ffe6b3";
-const diffHeaderColor = "#c594c5";
-const cssTagNameColor = "#73d0ff";
-const cssBrowserPrefixColor = "#5c6773";
-const searchResultsNumColor = "#5c6773";
-const markupHeadingColor = "#bae67e";
-const markupItalicColor = "#f28779";
-const markupBoldColor = "#f28779";
-const markupCodeColor = "#cbccc605";
-const markdownSeparatorColor = "#5c6773";
-const markupBlockquoteColor = "#95e6cb";
-const markupAddedColor = "#a6cc70";
-const markupModifiedColor = "#77a8d9";
-const markupRemovedColor = "#f27983";
-const markupStrikeColor = "#ffe6b3";
-const markdownLineBreakColor = "#5c6773";
-const markdownRawBlockColor = "#5c6773";
-
-// UI colors
+const pink = "#f27983";
+const pink_1 = "#f2798399";
+const pink_2 = "#f27983b3";
+const red_0 = "#f28779";
 const red = "#db6165";
 const cyan = "#68c1ed";
+const blue = "#5ccfe6";
+const blue_2 = "#73d0ff";
+const blue_3 = "#5ccfe680";
+const blue_4 = "#77a8d9";
+const dark_blue = "#33415e";
+const dark_blue_1 = "#33415efd";
 const yellow_0 = "#fac761";
 const yellow = "#ffcc66";
 const yellow_2 = "#ffd580";
-const background = "#1f2430";
-const background_2 = "#232834";
-const background_3 = "#323a4c";
+const pale_yellow = "#ffe6b3";
+const orange_0 = "#f29e74";
+const orange = "#ffa759";
 const grey = "#707a8c";
+const grey_2 = "#5c6773";
 const white_2 = "#cbccc6";
+const white_3 = "#cbccc6b3";
+const black = "#cbccc605";
+const green = "#bae67e";
+const green_2 = "#a6cc70";
+const green_3 = "#95e6cb";
+const purple = "#c594c5";
+const purple_2 = "#d4bfff";
+
+const commentColor = grey_2;
+const stringColor = green;
+const regularExpressionColor = green_3;
+const numberColor = yellow;
+const constantColor = yellow;
+const variableColor = white_2;
+const memberColor = red_0;
+const keywordColor = blue;
+const lambdaArrowColor = orange;
+const errorColor = red;
+const operatorColor = orange_0;
+const typesColor = blue_2;
+const separatorColor = white_3;
+const punctuationColor = white_2;
+const functionArgumentsColor = purple_2;
+const functionCallColor = yellow_2;
+const libraryFunctionColor = red_0;
+const importColor = green;
+const entityNameColor = blue_2;
+const tagStartEndColor = blue_3;
+const decoratorColor = pale_yellow;
+const diffHeaderColor = purple;
+const cssTagNameColor = blue_2;
+const cssBrowserPrefixColor = grey_2;
+const searchResultsNumColor = grey_2;
+const markupHeadingColor = green;
+const markupItalicColor = red_0;
+const markupBoldColor = red_0;
+const markupCodeColor = black;
+const markdownSeparatorColor = grey_2;
+const markupBlockquoteColor = green_3;
+const markupAddedColor = green_2;
+const markupModifiedColor = blue_4;
+const markupRemovedColor = pink;
+const markupStrikeColor = pale_yellow;
+const markdownLineBreakColor = grey_2;
+const markdownRawBlockColor = grey_2;
+
+// UI colors
+const background = "#161B22"; /* mega oscuro from iterm header #080E16 */
+const background_2 = "#1a2027";
+const background_3 = "#2A3541";
 const focusBorderColor = "#596171";
 const widgetShadowColor = "#141925";
-const selectionBackgroundColor = "#33415efd";
+const selectionBackgroundColor = dark_blue_1;
 const dropdownBorderColor = "#434957";
 const inputBorderColor = "#434957";
 const inputPlaceholderColor = "#5f6878";
@@ -62,7 +84,7 @@ const activityBarForegroundColor = "#707a8ccc";
 const listInvalidItemColor = "#5f6878";
 const editorLineNumberColor = "#707a8c66";
 const editorLineNumberActiveColor = "#707a8ccc";
-const editorSelectionColor = "#33415e";
+const editorSelectionColor = dark_blue;
 const editorWordHighlightStrongColor = "#ffcc6633";
 const editorFindMatchBackgroundColor = "#ffcc660d";
 const editorFindMatchHighlightBorderColor = "#ffcc6659";
@@ -75,7 +97,7 @@ const editorBracketMatchBackgroundColor = "#707a8c4d";
 const editorBracketMatchBorderColor = "#707a8c99";
 const editorOverviewRulerModifiedColor = "#77a8d999";
 const editorOverviewRulerAddedColor = "#a6cc7099";
-const editorOverviewRulerDeletedColor = "#f2798399";
+const editorOverviewRulerDeletedColor = pink_1;
 const diffEditorInsertedTextColor = "#bae67e26";
 const diffEditorRemovedTextColor = "#f29e7426";
 const editorSuggestWidgetBorderColor = "#101521";
@@ -84,20 +106,20 @@ const statusBarItemActiveBackgroundColor = "#00000050";
 const statusBarItemHoverBackgroundColor = "#00000030";
 const pickerGroupForegroundColor = "#525a69";
 const gitDecorationModifiedColor = "#77a8d9b3";
-const gitDecorationDeletedColor = "#f27983b3";
+const gitDecorationDeletedColor = pink_2;
 const gitDecorationUntrackedColor = "#a6cc70b3";
 const gitDecorationIgnoredColor = "#525a69";
 const gitDecorationConflictingColor = "#d4bfffb3";
 const terminalAnsiRedColor = "#ed8274";
-const terminalAnsiGreenColor = "#a6cc70";
+const terminalAnsiGreenColor = green_2;
 const terminalAnsiYellowColor = "#fad07b";
 const terminalAnsiBlueColor = "#6dcbfa";
 const terminalAnsiMagentaColor = "#cfbafa";
 const terminalAnsiCyanColor = "#90e1c6";
 const terminalAnsiWhiteColor = "#c7c7c7";
 const terminalAnsiBrightBlackColor = "#686868";
-const terminalAnsiBrightRedColor = "#f28779";
-const terminalAnsiBrightGreenColor = "#bae67e";
+const terminalAnsiBrightRedColor = red_0;
+const terminalAnsiBrightGreenColor = green;
 const terminalAnsiBrightWhiteColor = "#ffffff";
 const bracketHighlightColor = "#cbccc699";
 
@@ -693,8 +715,8 @@ const theme = {
     "statusBarItem.hoverBackground": statusBarItemHoverBackgroundColor,
     "statusBarItem.prominentBackground": background,
     "statusBarItem.prominentHoverBackground": statusBarItemHoverBackgroundColor,
-    "statusBarItem.remoteForeground": background,
-    "statusBarItem.remoteBackground": "#707a8c",
+    "statusBarItem.remoteForeground": grey,
+    "statusBarItem.remoteBackground": background,
     "titleBar.activeBackground": background,
     "titleBar.activeForeground": white_2,
     "titleBar.inactiveBackground": background,
@@ -742,7 +764,7 @@ const theme = {
     "editorBracketHighlight.foreground6": bracketHighlightColor,
     "editorBracketHighlight.unexpectedBracket.foreground": red,
     "editorInlayHint.typeBackground": background,
-    "editorInlayHint.typeForeground": "#5c6773",
+    "editorInlayHint.typeForeground": grey_2,
   },
   tokenColors: tokenColors,
 };

@@ -91,3 +91,10 @@ let tests =
     ; case "attributes component" clone_attributes
     ; case "ordered attributes component" clone_order_attributes
     ] )
+
+let important =
+  match Dream.multipart request ~csrf:false with
+  | `Ok formData ->
+      let response = Server_actions.Route.actionsHandler (FormData formData) actionId in
+      DreamRSC.createActionFromRequest request (React.Json response)
+  | _ -> failwith "Something went wrong"

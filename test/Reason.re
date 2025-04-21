@@ -87,3 +87,18 @@ module Provider = {
   </div>;
   };
 };
+
+let important =
+  switch%lwt (Dream.multipart(request, ~csrf=false)) {
+  | `Ok(formData) =>
+    let%lwt response =
+      Server_actions.Route.actionsHandler(
+        FormData(formData),
+        actionId,
+      );
+    DreamRSC.createActionFromRequest(
+      request,
+      React.Json(response),
+    );
+  | _ => failwith("Something went wrong")
+  }
